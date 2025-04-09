@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Divine Beauty - Spa de Beleza</title>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    /* Resetando margens e padding */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Georgia', serif;
+      background: #def5ed;
+      color: #333;
+      margin: 0;
+    }
+    header {
+    background-image: url('https://media.discordapp.net/attachments/1313402659088236554/1359247744690032770/IMG-20250408-WA0098.jpg?ex=67f6c99b&is=67f5781b&hm=9949dc274b2073fca9da1861dab6c400cdd598f81300b5f932d41b26f7ffb95d&=&format=webp&width=736&height=690');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: rgb(54, 50, 50);
+    text-align: center;
+    padding: 80px 20px;
+  }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+    }
+    nav {
+      background: #f8f9fa;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      margin: 0 20px;
+      text-decoration: none;
+      color: #67b192;
+      font-weight: bold;
+      font-size: 1.1rem;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #ffffff;
+    }
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 20px;
+    }
+    section {
+      padding: 20px;
+      background-color: white;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+    section h2 {
+      color: #227452;
+      margin-bottom: 15px;
+    }
+    .servicos-lista {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .servico-item {
+      text-align: center;
+      background: #f8f9fa;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+    .servico-item img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+    .servico-item h3 {
+      font-size: 1.2rem;
+      color:#1b5f43;
+      margin-bottom: 10px;
+    }
+    .servico-item p {
+      font-size: 1rem;
+      color: #555;
+    }
+    footer {
+      background:#76b99d;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    /* Formulário */
+    form {
+      background-color: #f8f9fa;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+    form label {
+      font-size: 1rem;
+      color: #333;
+      margin-bottom: 5px;
+    }
+    form input, form select, form button {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      font-size: 1rem;
+    }
+    form input::placeholder {
+      color: #999;
+    }
+    form button {
+      background-color:#76b99d;
+      color: white;
+      border: none;
+      font-size: 1.1rem;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    form button:hover {
+      background-color: #0a4213;
+    }
+
+    /* Responsividade */
+    @media (max-width: 768px) {
+      nav a {
+        display: block;
+        margin: 10px 0;
+      }
+      header h1 {
+        font-size: 2rem;
+      }
+      header p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <!-- Logo da empresa -->
+
+    <p><br><br>Centro de Estética e Spa</p>
+  </header>
+
+  <nav>
+    <a href="#sobre">Sobre</a>
+    <a href="#servicos">Serviços</a>
+    <a href="#diferenciais">Diferenciais</a>
+    <a href="#contato">Contato</a>
+  </nav>
+
+  <div class="container">
+    <section id="sobre">
+      <h2>Sobre o Negócio</h2>
+      <p>Criada em 2025, a Divine Beauty é uma empresa dedicada a cuidar da beleza e do bem-estar de nossos clientes, com uma abordagem consciente e responsável. Nossa missão é oferecer produtos de alta qualidade, livres de aditivos químicos e testados dermatologicamente, que sejam seguros e eficazes para todos os tipos de pele.<br><br>Nossa linha de produtos é cuidadosamente formulada para evitar substâncias nocivas, como parabenos, petrolatos e outros ingredientes que podem causar danos à pele. Em vez disso, utilizamos ingredientes naturais e veganos que promovem a saúde e a beleza da pele, melhorando sua aparência e dando-lhe mais vida.<br><br>Na Divine Beauty, acreditamos que a beleza e o bem-estar devem ser acessíveis a todos, independentemente do tipo de pele ou das necessidades individuais. Por isso, nossos produtos são projetados para serem adaptáveis e eficazes para uma ampla gama de tipos de pele, garantindo que todos possam desfrutar de uma pele saudável e radiante.</p>
+    </section>
+
+    <section id="servicos">
+      <h2>Serviços</h2>
+      <div class="servicos-lista">
+        <!-- Lista de serviços -->
+        <div class="servico-item">
+          <img src="https://media.discordapp.net/attachments/1313402659088236554/1359245261267796088/IMG-20250408-WA0094.jpg?ex=67f6c74b&is=67f575cb&hm=307c06606aad8c775557da793198b56bb03e125600c706a899661f09ede9d11f&=&format=webp&width=736&height=688" alt="Limpeza de pele profunda">
+          <h3>Limpeza de Pele Profunda</h3>
+          <p>Revitalize sua pele com um tratamento completo para remover impurezas e renovar a textura da sua pele.</p>
+        </div>
+        <div class="servico-item">
+          <img src="https://media.discordapp.net/attachments/1313402659088236554/1359246911630086274/IMG-20250408-WA0096.jpg?ex=67f6c8d5&is=67f57755&hm=6a9380e92d6d4791549f78690027b596295ae5c20244e29dda8fac2450d6933a&=&format=webp&width=736&height=680" alt="Massagens relaxantes e terapêuticas">
+          <h3>Massagens Relaxantes e Terapêuticas</h3>
+          <p>Desfrute de massagens feitas para relaxar corpo e mente, aliviando tensões e promovendo o bem-estar.</p>
+        </div>
+        <div class="servico-item">
+          <img src="https://media.discordapp.net/attachments/1313402659088236554/1359245250375450794/IMG-20250408-WA0093.jpg?ex=67f6c749&is=67f575c9&hm=8d96b48c01955800b8fa48ee193c87a6032410e6e6f6f7102acd01ae5a361c6e&=&format=webp&width=736&height=677" alt="Procedimentos estéticos">
+          <h3>Procedimentos Estéticos</h3>
+          <p>Clareamento, hidratação e rejuvenescimento para deixar sua pele mais jovem e radiante.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="diferenciais">
+      <h2>Diferenciais da Divine Beauty</h2>
+      <ul>
+        <li><strong> Veganos e naturais</strong></li>
+        <p>Nossa linha de produtos é cuidadosamente formulada para ser livre de adtivos quimicos. Em vez disso utilizamos ingredientes veganos e naturais que promovem a saúde e a beleza da pele. </p>
+        <li><strong>Sistema de refil e recarga</strong></li>
+        <p>Para reduzir o desperdicio e promover a sustentabilidade ofereçemos um sistema de refil e recarga para nossos produtos.
+        <li><strong>Pagamento em Crediário</strong></li>
+        <p>Entendemos que a beleza e o bem-estar devem ser acessíveis a todos. Por isso, oferecemos opções de pagamento em crediario, para que nossos clientes cuidem de si de forma regular e sem preocupações. </p>
+        <li><strong>Pacotes Mensais</strong></li>
+        <p> Nossos pacotes mensais incluem uma variedade de serviços e produtos para cuidar de você de forma regular e sem preocupações. </p>
+        <li><strong>Depilação a Laser com Tecnologias Avançadas e personalizadas</strong></li>
+          <p> Nossa equipe de especialistas em depilção a laser utiliza tecnologias avançadas para oferecer resultados personalizados e eficazes para cada tipo de pele.</p>
+        <p><br><br>A Divine Beauty oferece uma experiência de beleza e bem-estar única e personalizada, com uma abordagem comprometida com a sustentabilidade e a saúde da pele.</p>
+      </ul>
+    </section>
+
+    <section id="contato">
+      <h2>Contato</h2>
+      <p>Email: divinebeautyestetic@gmail.com</p>
+      <p>Whatsapp: <a href="https://wa.me/5571986150185?text=Olá!%20Gostaria%20de%20agendar%20um%20serviço." target="_blank">Clique aqui para falar no WhatsApp</a></p>
+    </section>
+
+    <section id="localizacao-horario">
+      <h2>Localização e Horário de Funcionamento</h2>
+      <p><strong>Endereço:</strong> Rua das Rosas, 123 – Pituba, Salvador – BA</p>
+      <p><strong>Horário de Atendimento:</strong></p>
+      <ul>
+        <li>Segunda a Sexta: 09:00 às 19:00</li>
+        <li>Sábado: 08:00 às 14:00</li>
+        <li>Domingo: Fechado</li>
+      </ul>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3896.920701320228!2d-38.468695!3d-12.999733!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7161ab27333fdf3%3A0x2cbf2f2c6f27052b!2sPituba%2C%20Salvador%20-%20BA!5e0!3m2!1spt-BR!2sbr!4v1614567890123!5m2!1spt-BR!2sbr"
+        width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+      </iframe>
+    </section>
+    
+
+    <h2>Formulário de Solicitação de Serviços</h2>
+<form id="formularioServico">
+  <label for="nome">Nome:</label>
+  <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+
+  <label for="email">E-mail:</label>
+  <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+
+  <label for="servicos">Selecione os serviços desejados:</label>
+  <select id="servicos" name="servicos[]" required>
+    <option value="Limpeza de pele profunda">Limpeza de pele profunda</option>
+    <option value="Massagens relaxantes e terapêuticas">Massagens relaxantes e terapêuticas</option>
+    <option value="Procedimentos estéticos">Procedimentos estéticos</option>
+    <option value="Design de sobrancelhas">Design de sobrancelhas</option>
+    <option value="Spa Day">Spa Day</option>
+    <option value="Terapias alternativas">Terapias alternativas</option>
+  </select>
+
+  <button type="submit">Enviar via WhatsApp</button>
+</form>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const formulario = document.getElementById('formularioServico');
+
+    if (formulario) {
+      formulario.addEventListener('submit', function (event) {
+        event.preventDefault(); // Evita o refresh da página
+
+        const nome = document.getElementById('nome').value.trim();
+        const email = document.getElementById('email').value.trim();
+        const servicoSelecionado = document.getElementById('servicos').value;
+
+        if (!nome || !email) {
+          alert("Por favor, preencha todos os campos.");
+          return;
+        }
+
+        const mensagem = `Olá! Gostaria de solicitar um serviço:\n\nNome: ${nome}\nE-mail: ${email}\nServiço selecionado: ${servicoSelecionado}`;
+        const numeroWhatsApp = '5571986150185';
+        const linkWhatsApp = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(mensagem)}`;
+
+        window.location.href = linkWhatsApp;
+      });
+    }
+  });
+</script>
+
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Divine Beauty. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
