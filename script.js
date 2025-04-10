@@ -114,3 +114,17 @@ document.addEventListener('DOMContentLoaded', () => {
     bolhasContainer.appendChild(bolha);
   }
 });
+
+// Carrosel de imagens
+let slideIndex = 0;
+
+function moveSlide(step) {
+  const slides = document.querySelectorAll('.carrossel-slide img');
+  const totalSlides = slides.length;
+
+  slideIndex = (slideIndex + step + totalSlides) % totalSlides;
+  document.querySelector('.carrossel-slide').style.transform = `translateX(-${slideIndex * 100}%)`;
+}
+
+setInterval(() => moveSlide(1), 3000); // Muda a imagem a cada 3 segundos
+
